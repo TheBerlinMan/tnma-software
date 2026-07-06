@@ -32,9 +32,9 @@ Copy this block inside `<section class="project-grid">` in `index.html`, then up
 </article>
 ```
 
-- `tag-type` (Website/Application) and the icon-links sit together on the left; `tag-status` sits opposite on the right.
+- `tag-type` (Website/App) and the icon-links sit together on the left; `tag-status` sits opposite on the right.
 - `tag-status` add `is-active` for a live green dot, or omit it for a muted "Inactive" state.
-- Websites get the globe icon-link; applications get the globe and/or the GitHub icon-link, whichever apply.
+- Websites get the globe icon-link; apps get the globe and/or the GitHub icon-link, whichever apply.
 
 Drop a cover image (ideally 640x360 or 16:9) into `assets/images/`.
 
