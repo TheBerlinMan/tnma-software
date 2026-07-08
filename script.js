@@ -20,3 +20,22 @@ const observer = new IntersectionObserver(
 );
 
 cards.forEach((card) => observer.observe(card));
+
+let lastHue = null;
+function nextHue() {
+  let hue = Math.floor(Math.random() * 360);
+  if (lastHue !== null) {
+    while (hue === lastHue) {
+      hue = Math.floor(Math.random() * 360);
+    }
+  }
+  lastHue = hue;
+  return hue;
+}
+
+const hoverColorTargets = [...cards, themeToggle];
+hoverColorTargets.forEach((el) => {
+  el.addEventListener("mouseenter", () => {
+    el.style.setProperty("--hover-accent", `hsl(${nextHue()}, 70%, 60%)`);
+  });
+});

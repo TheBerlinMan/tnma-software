@@ -1,0 +1,7 @@
+{
+  "name": "tnma-software",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/stamp-date.js"
+  }
+}

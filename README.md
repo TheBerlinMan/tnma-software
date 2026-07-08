@@ -1,6 +1,6 @@
 # Portfolio
 
-Plain HTML/CSS/JS portfolio site linking out to projects I've built. No build step, no dependencies — open `index.html` directly or serve it with any static file server.
+Plain HTML/CSS/JS portfolio site linking out to projects I've built. No dependencies — open `index.html` directly or serve it with any static file server. The only build step is `scripts/stamp-date.js`, which stamps the "Last updated" date on deploy (see [Deploy](#deploy)).
 
 ## Adding a new project
 
@@ -46,4 +46,4 @@ npx serve .
 
 ## Deploy
 
-Zero-config on Vercel — connect the repo or run `vercel` from this directory (install the CLI first with `npm i -g vercel`).
+Deploys on Vercel — connect the repo or run `vercel` from this directory (install the CLI first with `npm i -g vercel`). `vercel.json` runs `npm run build` before each deploy, which stamps today's date into the "Last updated" line in `index.html`.
